@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>京东(JD.COM)-欢迎上传头像！</title>
+ 		<meta name="description" content="京东JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+ 		<meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,京东" />
+ 		<link rel="icon" href="jd/favicon.ico" type="image/x-icon" />
+  	 	<link rel="shortcut icon" href="jd/favicon.ico" type="image/x-icon" />
+  	 	<link rel="stylesheet" type="text/css" href="css/register.css"/>
+  	 	<link href="css/bootstrap.min.css" rel="stylesheet">
+  	 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="lonav">
+			<div class="container">
+				<img class="fl" src="jd/logo-201305-b.png" alt="" />
+				<div class="re">
+					欢迎上传头像
+				</div>
+			</div>
+		</div>
+		
+		<!-- 上传头像表单 -->
+		<div class="container">
+			<form action="/user/upload" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<input type="file" name="photo" accept=".jpg,.png" autocomplete="off" />
+				</div>
+				<input type="submit" class="btn btn-success form-control" value="上传头像" />
+			</form>
+		</div>
+		
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    	<div class="modal-dialog">
+	    		<div class="modal-content">
+	    			<div class="modal-header">
+	    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	    				<h4 class="modal-title" id="myModalLabel">智游教育</h4>
+	    			</div>
+	    			<div class="modal-body">在这里添加一些文本</div>
+	    			<div class="modal-footer">
+	    				<button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+	    			</div>
+	    		</div>
+	    	</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="scripts/upload.js" type="text/javascript" charset="utf-8"></script>
+</html>
